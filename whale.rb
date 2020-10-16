@@ -3,7 +3,7 @@ class Whale < Formula
   homepage "https://github.com/rsyi/whale"
   url "https://github.com/dataframehq/whale/releases/download/v1.0.0b0/whale-mac.tar.gz"
   sha256 "4911e683fde28220874bce490243c3e427462cd4cc0c575175cdc31664428860"
-  version "v1.0.0b0"
+  version "v0.0.0b0"
 
   depends_on "python"
   depends_on "rust" => :build
