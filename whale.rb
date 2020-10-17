@@ -13,7 +13,8 @@ class Whale < Formula
   def install
     system "make rust"
     venv = virtualenv_create(libexec/"env", python="python3")
-    venv.pip_install buildpath/"databuilder"
+    system libexec/"env/bin/pip", "install", "-v", "-r", buildpath/"databuilder/requirements.txt",
+      "--ignore-installed", buildpath/"databuilder"
     system "cp cli/target/release/whale cli/target/release/wh"
     bin.install "cli/target/release/wh"
     libexec.install buildpath/"databuilder/build_script.py"
