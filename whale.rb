@@ -3,9 +3,9 @@ class Whale < Formula
 
   desc "Data warehouse command line explorer"
   homepage "https://github.com/rsyi/whale"
-  url "https://github.com/dataframehq/whale/releases/download/v1.1.0/whale-mac.tar.gz"
-  sha256 "ff06f0f289137d7d97844b11c29c06c3e3aa27a6a20cbe959ebb9ab822d2dd8b"
-  version "v1.1.0"
+  url "https://github.com/dataframehq/whale/releases/download/v1.1.1/whale-mac.tar.gz"
+  sha256 "49c7700962a561056eee3faae57f68ee31cfbab120b34ee8e1e89b77a5d324fb"
+  version "v1.1.1"
 
   depends_on "python@3.8"
   depends_on "rust" => :build
