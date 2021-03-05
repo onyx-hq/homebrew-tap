@@ -8,6 +8,7 @@ class Whale < Formula
   version "v1.5.1"
 
   depends_on "python@3.8"
+  depends_on "unixodbc"
   depends_on "rust" => :build
 
   def install
